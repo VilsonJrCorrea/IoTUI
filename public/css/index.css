@@ -1,0 +1,90 @@
+.entrar {
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: Lucida Console, Helvetica, sans-serif;
+    font-size: 120%;
+    color: #6a0019;
+    text-shadow: 3px 3px #b4b4b4;
+}
+
+input, button {
+    font-family: font-family: Lucida Console, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+.main-div {
+    width: auto;
+    margin: auto;
+    margin-top: 1%;
+    padding: 13%;
+    background: linear-gradient(to bottom right, #ffccff 0%, #ffff99 100%);
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-bottom-style: double;
+    border-bottom-color: #ffff99;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div > div {
+    height: 50%;
+    position: relative;
+}
+
+.main-div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    background: #fff;
+    padding: 5%;
+    outline: none;
+    width: 100%;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+
+}
+
+.main-div button {
+    border-radius: 5%;
+    color: #d11a45;
+    border: 1px solid #ff6f69;
+    background: #fff;
+    /*padding: 5%;*/
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    display: block;
+    width: 45%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+
+}
+
+.main-div button:hover {
+    background: #fff;
+    color: #d18746;
+    border: 1px solid #ffb372;
+    cursor: pointer;
+    border-bottom-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-bottom-style: double;
+    top: 50%;
+    left: 50%;
+    transform: translate(+1%, +1%);
+
+}
+
+.main-div input:focus {
+    border: 1px solid #999;
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="js/web.js"></script>
+    <!--<script type="text/javascript" src="login.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyANSvzseAxVr9tD98pjbV9oHjlx_iPfc7w",
+            authDomain: "iotpin-2018.firebaseapp.com",
+            databaseURL: "https://iotpin-2018.firebaseio.com",
+            projectId: "iotpin-2018",
+            storageBucket: "iotpin-2018.appspot.com",
+            messagingSenderId: "334061702305"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Controle Luminosidade</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div id="divLogin" class="entrar">
+    <div id="login_div" class="main-div">
+        <div>
+            <p id="bemvindo">Bem vindo!</p>
+        </div>
+        <div>
+            <input type="email" placeholder="Email..." id="email_field"/>
+        </div>
+        <div>
+            <input type="password" placeholder="Password..." id="password_field"/>
+        </div>
+        <div class="divmlk">
+            <button class="login" onclick="login()">Login to Acount</button>
+        </div>
+    </div>
+</div>
+
+<div id="user_div" class="loggedin-div">
+    <div class="text">
+        <div id="lblEnumciado">
+            <p>Arraste a barra para alterar a luminosidade da lâmpada</p>
+        </div>
+        <div class="slidercontainer">
+            <input type="range"
+                   name="points"
+                   min="0"
+                   step="1"
+                   value="0"
+                   max="255"
+                   id="barra"
+                   onchange="changeLabel()"
+                   data-state="0"
+                   class="slider">
+        </div>
+        <div id="lblResposta">
+            <p id="resposta">Sua lâmpada está com 0% de luminosidade</p>
+        </div>
+        <div id="divmlk">
+            <div></div>
+            <div id="divDoBtnLogout">
+                <button id="btnLogout" class="logout" onclick="logout()">Logout</button>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
