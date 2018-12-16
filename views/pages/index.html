@@ -9,6 +9,12 @@
         $(function () {
             console.log('pagina pronta');
             lampadaAtual = 'lampadaOne';
+            firebase.database().ref(lampadaAtual).on('value', function (snapshot) {
+                let lampadaTwo = snapshot.val();
+                document.getElementById("barra").value = lampadaTwo;
+                let porcentagem = Math.round((100 * lampadaTwo) / 255);
+                document.getElementById("resposta").innerHTML = "Sua lâmpada está com " + porcentagem + "% de luminosidade";
+            });
         });
     </script>
     <script type="text/javascript" src="js/web.js"></script>
