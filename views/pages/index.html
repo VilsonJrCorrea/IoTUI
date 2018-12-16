@@ -5,18 +5,6 @@
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            console.log('pagina pronta');
-            lampadaAtual = 'lampadaOne';
-            firebase.database().ref(lampadaAtual).on('value', function (snapshot) {
-                let lampadaTwo = snapshot.val();
-                document.getElementById("barra").value = lampadaTwo;
-                let porcentagem = Math.round((100 * lampadaTwo) / 255);
-                document.getElementById("resposta").innerHTML = "Sua lâmpada está com " + porcentagem + "% de luminosidade";
-            });
-        });
-    </script>
     <script type="text/javascript" src="js/web.js"></script>
     <!--<script type="text/javascript" src="login.js"></script>-->
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
