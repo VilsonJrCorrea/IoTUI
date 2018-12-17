@@ -7,14 +7,14 @@ $(function () {
 var firebase = require("firebase");
 var lampadaAtual = 'lampadaOne';
 function navOneClicada() {
-    document.getElementById("navOne").style.background = "white";
+    document.getElementById("navOne").style.background = "#ffbae3";
     document.getElementById("navTwo").style.background = "none";
     lampadaAtual = 'lampadaOne';
     updateBar();
 }
 
 function navTwoClicada() {
-    document.getElementById("navTwo").style.background = "white";
+    document.getElementById("navTwo").style.background = "#ffbae3";
     document.getElementById("navOne").style.background = "none";
     lampadaAtual = 'lampadaTwo';
     updateBar();
