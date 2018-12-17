@@ -134,16 +134,11 @@ p#resposta {
     width: 45%;
 }
 
-.topnav a:hover {
-    /*background-color: #ffd8e4;*/
-    background: linear-gradient(to bottom right, #fff17a 0%, #faa2ff 100%);
-    color: #6a0015;
-}
 
 .topnav a.active {
     background-color: #6a0019;
-    color: #ffbdfa;
+    color: #ffb4cc;
 }
 #navOne{
-    background: #ffbae3;
+    background:#ffb4cc;
 }
